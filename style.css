@@ -105,16 +105,15 @@ section:nth-child(even){
     padding-top: 10rem;
 }
 
-.home.image{
+.home .image{
     flex:1 1 45rem;
 } 
 
-.home.image.img{
+.home .image img{
     width: 100%;
-
 } 
 
-.home.content{
+.home .content{
     flex: 1 1 45rem;
 }
 
@@ -138,28 +137,28 @@ section:nth-child(even){
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
- .icons-container.icons{
+ .icons-container .icons{
     border:var(--border);
     box-shadow: var(--box-shadow);
-    border-radius: 5rem;
+    border-radius: .5rem;
     text-align: center;
     padding: 2.5rem;
  }
 
- .icons-container.icons i{
+ .icons-container .icons i{
     font-size: 4.5rem;
     color: var(--pink);
     padding-bottom: .7rem;
  }
 
- .icons-container.icons h3{
+ .icons-container .icons h3{
     font-size: 4.5rem;
     color: var(--black);
     padding: .5rem 0;
     text-shadow: var(--text-shadow);
 }
 
-.icons-container.icons p{
+.icons-container .icons p{
     font-size: 1.7rem;
     color: var(--light-color);
 }
