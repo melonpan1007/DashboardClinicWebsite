@@ -197,7 +197,7 @@ section:nth-child(even){
     #menu-btn{
         display:initial;
     }
-    .header.navbar{
+    .header .navbar{
         position:absolute;
         top:115%; right:2rem;
         border-radius: .5rem;
@@ -211,12 +211,12 @@ section:nth-child(even){
         transition:none;
         }
     
-        .header.navbr.active{
-            transform:scale(1);
+        .header .navbar.active{
+        transform:scale(1);
         opacity:1;
         transition: .2s eas;
         }
-    .header.navbar a{
+    .header .navbar a{
         font-size: 2rem;
         display: block;
         margin:2.5rem;
