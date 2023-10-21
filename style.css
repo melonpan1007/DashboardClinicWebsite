@@ -86,7 +86,25 @@ section:nth-child(even){
 .header .navbar a:hover{
     color:var(--pink);
 }
-
+.header .btnLogin-popup{
+    width:130px;
+    height: 50px;
+    background:transparent;
+    border:2px solid var(--pink);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font: size 1.7em;;
+    color: var(--pink);
+    font-weight: 500px;
+    margin-left: 2rem; 
+    transition: .5s;
+    box-shadow: var(--box-shadow);
+}
+.header .btnLogin-popup:hover {
+    background-color: #c20881;
+    color: white;
+}
 #menu-btn{
     font-size: 2.5rem;
     border-radius: .5rem;
