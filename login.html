@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="login.css"></head>
-    <body background="doc.jpg" style="background-repeat: no-repeat; background-position: down left; background-size: 120%;background-color: #ae74d4;"> 
-        <center>
-            <div class="wrapper">
-                 <div class="form-box login">
-                    <h2>Login</h2>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail-open"></ion-icon></span>
-                            <input type="email" required>
-                            <label>Email</label>
-                        </div> 
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" required>
-                            <label>Password</label>
-                        </div>
-                        <div class="remember-forgot">
-                            <label><input type="checkbox">Remember me</label>
-                            <a href="#">Forgot Password</a>
-                        </div>
-                        <button type="submit" class="btn" onclick="PerformLogin()">Login</button>
-                    </form>
-                </div>
-            </div>
+<html>
 
-<script>
-    function PerformLogin(){
-        window.location.href="index.html";
-    }
-</script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-   </center> </body>
-    </html>
+<head>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body background="doc.jpg" style="background-repeat: no-repeat; background-position: down left; background-size: 120%;background-color: #ae74d4;">
+  <center>
+    <div class="wrapper">
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail-open"></ion-icon></span>
+            <input type="email" id="user" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" id="pass" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="button" class="btn" id="myLogin">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function validate() {
+        var uname = document.getElementById("user").value;
+        var pwd = document.getElementById("pass").value;
+
+        if (uname === "" || pwd === "") {
+          alert("Invalid Login. Please provide both username and password.");
+          // Reload the page using window.location.reload()
+          window.location.reload();
+        } else {
+          performLogin();
+        }
+      }
+
+      function performLogin() {
+    
+        window.location.href = "index.html";
+      }
+
+      var myLoginButton = document.getElementById('myLogin');
+
+      myLoginButton.addEventListener('click', function () {
+        validate();
+      });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </center>
+</body>
+
+</html>
