@@ -1,1 +1,1 @@
-# Website-Development
+I've developed a web application using HTML, CSS, and JavaScript to create a Dashboard Clinic Website. The website serves as a centralized platform for managing clinic-related tasks and information. Users can easily navigate through the interface to access patient records, schedule appointments, and view clinic statistics. The interactive dashboard provides a user-friendly experience, enhancing efficiency in clinic management.
